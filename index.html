@@ -6,64 +6,63 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9; /* Cream background */
-    color: #000000; /* Black text */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Set minimum height to full viewport height */
-    
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Cream background */
+            color: #000000; /* Black text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to full viewport height */
+        }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #000000; /* Black text */
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: auto; /* Push footer to the bottom */
-    background-color: #f9f9f9; /* Cream background */
-}
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #000000; /* Black text */
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: auto; /* Push footer to the bottom */
+            background-color: #f9f9f9; 
+        }
+        .project-container {
+            margin-bottom: 20px;
+        }
+        header {
+            background-color: black; /* Light grey background */
+            text-align: left; /* Align text to the left */
+            display: flex;
+            justify-content: space-between; /* Space between elements */
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
 
-header {
-    background-color: black; /* Light grey background */
-    text-align: left; /* Align text to the left */
-    display: flex;
-    justify-content: space-between; /* Space between elements */
-    align-items: center;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
+        header h1 {
+            margin: 0;
+            color: white; 
+        }
 
-header h1 {
-    margin: 0;
-    color: white; /* Black text */
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
-}
+        nav ul li {
+            margin-left: 20px; 
+        }
 
-nav ul li {
-    margin-left: 20px; /* Adjust spacing between navigation items */
-}
-
-nav ul li a {
-    color: #000000; /* Black text */
-    text-decoration: none;
-}
-
-
+        nav ul li a {
+            color: #000000; 
+            text-decoration: none;
+        }
 
         section {
             padding: 25px 0;
@@ -74,8 +73,8 @@ nav ul li a {
             background-color:black;
             text-align: center;
             padding: 10px 0;
-            color: white; /* Black text */
-            margin-top: auto; /* Push footer to the bottom */
+            color: white; 
+            margin-top: auto; 
         }
 
         .button {
@@ -153,12 +152,13 @@ nav ul li a {
             padding: 20px;
             border: none;
             border-radius: 10px;
-            
         }
+
         .contact-form div {
-    display: flex; 
-    justify-content: space-between;
-}
+            display: flex; 
+            justify-content: space-between;
+        }
+
         .contact-form label {
             color: black;
             display: block;
@@ -185,7 +185,8 @@ nav ul li a {
             cursor: pointer;
             border: 1px solid white;
             margin-top: 10px;
-            width: 45% ;
+            width: 45%;
+        }
 
         .contact-form button:hover {
             background-color: black;
@@ -200,20 +201,20 @@ nav ul li a {
         <div>
             <nav>
                 <ul>
-                    <li><a style ="color: white;" href="#about-me"><u>About Me</u></a></li>
-                    <li><a style ="color: white;" href="#resume"><u>Resume</u></a></li>
-                    <li><a style ="color: white;" href="#projects"><u>Projects</u></a></li>
-                    <li><a  style ="color: white;" href="#contact"><u>Contact Me</u></a></li>
+                    <li><a style="color: white;" href="#about-me"><u>About Me</u></a></li>
+                    <li><a style="color: white;" href="#resume"><u>Resume</u></a></li>
+                    <li><a style="color: white;" href="#projects"><u>Projects</u></a></li>
+                    <li><a style="color: white;" href="#contact"><u>Contact Me</u></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- About Me Section (Shows on Landing Page) -->
-    <section id="about-me" class="container" style="padding: 50px 30px;">
+    <section id="about-me" class="container" style="padding: 20px;margin-bottom: 10px;">
         <div class="about-container" style="display: flex; align-items: center; justify-content: space-between;">
             <div style="flex: 1;">
-                <img src="C:\Users\usatt\OneDrive\Desktop\githubimage.jpg" alt="Umair Sattar" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;">
+                <img src="C:\Users\Hp\OneDrive\Desktop\porftfolio img.jpg" alt="Umair Sattar" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; margin-bottom: 10px;">
             </div>
             <div class="about-text" style="flex: 1; margin-left: 10px;">
                 <h2 style="font-size: 32px; color: #333; margin-bottom: 20px;">Hello, I am <i>Umair Sattar</i></h2>
@@ -228,47 +229,104 @@ nav ul li a {
         </div>
     </section>
     
-
-    <section id="resume" class="container">
-        <h2>Education</h2>
-        <div>
-            <h3>2020-2024</h3>
-            <p>BS Computer Science at FAST NUCES - National University Of Computer Science & Technology</p>
-            <h3>2018-2020</h3>
-            <p>Pre-Engenering at Punjab Group of colleges </p>
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container"style="margin-bottom: 20px;">
+            <h2><u>Education</u></h2>
+            <div>
+                <h3>2020-2024</h3>
+                <p>BS Computer Science at FAST NUCES - National University Of Computer Science & Technology</p>
+                <h3>2018-2020</h3>
+                <p>Pre-Engenering at Punjab Group of colleges </p>
+            </div>
         </div>
-    </section>
-    <section id="resume" class="container">
-        
-            <h2>Skills</h2>
-            <p>1: Problem-solving</p>
-            <p>2: Management skills</p>
-            <p>3: Technical Analysis</p>
-            <section id="resume" class="container">
-            <h2>Languages</h2>
-            <p>English, Urdu</p>
+
+        <div class="container"style="margin-bottom: 20px;">
+            <h2><u>Skills</u></h2>
+            <ul>
+                <li>C++</li>
+                <li>Java Script</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>C</li>
+            </ul>
+        </div>
+
+        <div class="container"style="margin-bottom: 20px;">
+            <h2><u>Languages</u></h2>
+            <ul>
+                <li>English (professional)</li>
+                <li>Urdu (native)</li>
+            </ul>
+        </div>
+
+        <div class="container"style="margin-bottom: 20px;">
+            <h2><u>Additional</u></h2>
+            <ul>
+                <li>Enterpernurial Mindset</li>
+                <li>Go-to-Market Planning</li>
+                <li>TeamWork & collaboration</li>
+            </ul>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div>
-    
-            <h3>Project1: RareFinds</h3>
-            <p>RareFinds
-                         RareFinds (Our App+web) is a blockchain-based online auction marketplace for unique Items designed to facilitate customers looking to buy or sell one-of-a-kind products. Sellers can list their items for auction, and buyers can openly bid against each other, with each subsequent bid required to exceed the previous bid. Bidding will remain open for a specified duration, after which the item will be sold to the highest bidder..</p>
-            <a href="https://github.com/AyeshaAshfaq22/DodgeEm" target="_blank" class="button"><span>Show Details</span></a>
+    <section id="projects">
+       
+        <div class="container">
+            <h2><u>Projects</u></h2>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project1: RareFinds</h3>
+                    <p>RareFinds is a blockchain-based online auction marketplace for unique items designed to facilitate customers looking to buy or sell one-of-a-kind products. Sellers can list their items for auction, and buyers can openly bid against each other, with each subsequent bid required to exceed the previous bid. Bidding will remain open for a specified duration, after which the item will be sold to the highest bidder.</p>
+                    <a href="https://github.com/umairsattar142/RareFinds" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
 
-            <h3>Project2: Search Algorithms Implementation using Python AI
-            </h3>
-            <p>My project focuses on implementing a range of searching algorithms, categorized into uninformed and informed search techniques, along with adversarial search methods. Each searching algorithm serves a specific purpose..</p>
-            <a href="https://github.com/AyeshaAshfaq22/Transport-System" target="_blank" class="button"><span>Show Details</span></a>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project2: Search Algorithms Implementation using Python AI</h3>
+                    <p>My project focuses on implementing a range of searching algorithms, categorized into uninformed and informed search techniques, along with adversarial search methods. Each searching algorithm serves a specific purpose.</p>
+                    <a href="https://github.com/umairsattar142/SearchAlgos" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
 
-
-            <h3>Health Care</h3>
-            <p>HealthCare, your one-stop destination for all your health care needs. Whether you're seeking information about common medical conditions, looking for trusted health care providers, or striving to adopt a healthier lifestyle, HealthPlus has got you covered. Our user-friendly website is designed to empower individuals to make informed decisions about their health and well-being..</p>
-            <a href="https://github.com/umairsattar142/Healthcare-Website" target="_blank" class="button"><span>Show Details</span></a>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project3: Health Care</h3>
+                    <p>HealthCare, your one-stop destination for all your health care needs. Whether you're seeking information about common medical conditions, looking for trusted health care providers, or striving to adopt a healthier lifestyle, HealthPlus has got you covered. Our user-friendly website is designed to empower individuals to make informed decisions about their health and well-being.</p>
+                    <a href="https://github.com/umairsattar142/Healthcare-Website" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project4: Space shooter</h3>
+                    <p>Embark on an intergalactic journey as you pilot your spaceship through the depths of space. Engage in intense dogfights against relentless alien forces, dodging asteroids and enemy fire. Upgrade your ship's weaponry and defenses to become the ultimate space ace. Can you survive the cosmic onslaught and emerge victorious in this thrilling space shooter adventure?</p>
+                    <a href="https://github.com/umairsattar142/space-shooter" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project5: Packet sniffer</h3>
+                    <p>A packet sniffer captures and analyzes data packets traversing a network interface for various purposes such as troubleshooting or security monitoring.</p>
+                    <a href="https://github.com/umairsattar142/Packet-Sniffer" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project6: Crick Buzz</h3>
+                    <p>Cricbuzz is a leading cricket news and live scores app providing comprehensive coverage of international and domestic cricket matches. It offers real-time updates, ball-by-ball commentary, match schedules, player statistics, and analysis from cricket experts. With a user-friendly interface and customizable notifications, Cricbuzz keeps cricket enthusiasts informed and engaged throughout the game, making it the go-to platform for cricket fans worldwide.</p>
+                    <a href="https://github.com/umairsattar142/CrickBuzzz" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
+            <div>
+                <div class="container" style="margin-bottom: 20px;">
+                    <h3>Project7: PizzaDelight Website</h3>
+                    <p>Pizza Delight! Enjoy hot, fresh pizzas delivered promptly to your door. With an extensive menu, quality ingredients, and convenient ordering, satisfaction is guaranteed. Place your order now for a delicious dining experience!</p>
+                    <a href="https://github.com/umairsattar142/PIZZAWebpage" target="_blank" class="button"><span>Show Details</span></a>
+                </div>
+            </div>
         </div>
     </section>
 
