@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Set minimum height to full viewport height */
+    
 }
 
 .container {
@@ -150,13 +151,16 @@ nav ul li a {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            border: 2px solid #ddd;
+            border: none;
             border-radius: 10px;
             
         }
-
+        .contact-form div {
+    display: flex; 
+    justify-content: space-between;
+}
         .contact-form label {
-            color: white;
+            color: black;
             display: block;
             margin-bottom: 5px;
         }
@@ -169,7 +173,7 @@ nav ul li a {
             border: 1px solid black;
             border-radius: 5px;
             background-color: white;
-            color: white;
+            color: black;
         }
 
         .contact-form button {
@@ -181,7 +185,7 @@ nav ul li a {
             cursor: pointer;
             border: 1px solid white;
             margin-top: 10px;
-        }
+            width: 45% ;
 
         .contact-form button:hover {
             background-color: black;
@@ -196,49 +200,52 @@ nav ul li a {
         <div>
             <nav>
                 <ul>
-                    <li><a style ="color: white;" href="#about-me"><ur>About Me</ur></a></li>
-                    <li><a style ="color: white;" href="#resume"><ur>Resume</ur></a></li>
-                    <li><a style ="color: white;" href="#projects"><ur>Projects</ur></a></li>
-                    <li><a  style ="color: white;" href="#contact"><ur>Contact Me</ur></a></li>
+                    <li><a style ="color: white;" href="#about-me"><u>About Me</u></a></li>
+                    <li><a style ="color: white;" href="#resume"><u>Resume</u></a></li>
+                    <li><a style ="color: white;" href="#projects"><u>Projects</u></a></li>
+                    <li><a  style ="color: white;" href="#contact"><u>Contact Me</u></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- About Me Section (Shows on Landing Page) -->
-    <section id="about-me" class="container">
-        
-       
-        <div class="about-container">
-            <div>
-                <img src="C:\Users\usatt\OneDrive\Desktop\githubimage.jpg" alt="Umair Sattar" style="width: 200px; height: auto; border-radius: 10px;">
-                <div class="about-icons">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin" style="font-size: 24px; color: black;"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-envelope" style="font-size: 24px; color: black;"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github" style="font-size: 24px; color: black;"></i></a>
-                </div>
+    <section id="about-me" class="container" style="padding: 50px 30px;">
+        <div class="about-container" style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="flex: 1;">
+                <img src="C:\Users\usatt\OneDrive\Desktop\githubimage.jpg" alt="Umair Sattar" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;">
             </div>
-            <div class="about-text">
-                <h2>Hello, I am Umair Sattar<h3>
-                    
-                <p>Enthusiastic Computer scientist willing to contribute to success through hard work, attention in detail, and excellent organizational and technical skills. Rouse to learn, develop and succeed in the IT industry.</p>
-                
+            <div class="about-text" style="flex: 1; margin-left: 10px;">
+                <h2 style="font-size: 32px; color: #333; margin-bottom: 20px;">Hello, I am <i>Umair Sattar</i></h2>
+                <p style="font-size: 18px; color: #666; line-height: 1.6;">Enthusiastic Computer scientist willing to contribute to success through hard work, attention to detail, and excellent organizational and technical skills. Eager to learn, develop, and succeed in the IT industry.</p>
+                <p style="font-style: italic; color: #888; margin-top: 20px;">"Destiny is all"</p>
+                <div class="about-icons" style="margin-top: 30px;">
+                    <a href="https://www.linkedin.com/in/umair-sattar-90917623b/" target="_blank" style="text-decoration: none; color: #333;"><i class="fab fa-linkedin" style="font-size: 24px; margin-right: 10px;"></i></a>
+                    <a href="mailto:usattar307@gmail.com" target="_blank" style="text-decoration: none; color: #333;"><i class="fas fa-envelope" style="font-size: 24px; margin-right: 10px;"></i></a>
+                    <a href="https://github.com/umairsattar142" target="_blank" style="text-decoration: none; color: #333;"><i class="fab fa-github" style="font-size: 24px; margin-right: 10px;"></i></a>
+                </div>
             </div>
         </div>
     </section>
+    
 
-    <!-- Resume Section -->
     <section id="resume" class="container">
-        <h2>Resume</h2>
+        <h2>Education</h2>
         <div>
-            <h3>Education</h3>
+            <h3>2020-2024</h3>
             <p>BS Computer Science at FAST NUCES - National University Of Computer Science & Technology</p>
-
-            <h3>Skills</h3>
+            <h3>2018-2020</h3>
+            <p>Pre-Engenering at Punjab Group of colleges </p>
+        </div>
+    </section>
+    <section id="resume" class="container">
+        
+            <h2>Skills</h2>
             <p>1: Problem-solving</p>
             <p>2: Management skills</p>
-
-            <h3>Languages</h3>
+            <p>3: Technical Analysis</p>
+            <section id="resume" class="container">
+            <h2>Languages</h2>
             <p>English, Urdu</p>
         </div>
     </section>
@@ -247,20 +254,21 @@ nav ul li a {
     <section id="projects" class="container">
         <h2>Projects</h2>
         <div>
-            <!-- Project1 -->
-            <h3>Project1: DodgeEm game</h3>
-            <p>DodgeEm is an exciting arcade-style game where players control a character trying to dodge obstacles while navigating through a dynamic environment. The game provides an immersive experience with responsive controls, challenging levels, and captivating graphics. DodgeEm aims to entertain players and test their reflexes as they strive to achieve high scores and conquer increasingly difficult levels.</p>
+    
+            <h3>Project1: RareFinds</h3>
+            <p>RareFinds
+                         RareFinds (Our App+web) is a blockchain-based online auction marketplace for unique Items designed to facilitate customers looking to buy or sell one-of-a-kind products. Sellers can list their items for auction, and buyers can openly bid against each other, with each subsequent bid required to exceed the previous bid. Bidding will remain open for a specified duration, after which the item will be sold to the highest bidder..</p>
             <a href="https://github.com/AyeshaAshfaq22/DodgeEm" target="_blank" class="button"><span>Show Details</span></a>
 
-            <!-- Project2 -->
-            <h3>Project2: Transport System</h3>
-            <p>The Transport Management System is a software application designed to streamline and automate various aspects of managing transportation operations. It provides functionalities for tracking vehicles, managing routes, scheduling trips, handling reservations, and generating reports. The system aims to improve efficiency, reduce costs, and enhance overall operational control for transportation companies or organizations.</p>
+            <h3>Project2: Search Algorithms Implementation using Python AI
+            </h3>
+            <p>My project focuses on implementing a range of searching algorithms, categorized into uninformed and informed search techniques, along with adversarial search methods. Each searching algorithm serves a specific purpose..</p>
             <a href="https://github.com/AyeshaAshfaq22/Transport-System" target="_blank" class="button"><span>Show Details</span></a>
 
-            <!-- Project3 -->
-            <h3>Project3: Dictionary</h3>
-            <p>The Dictionary project is a comprehensive digital tool designed to provide users with word definitions, synonyms, antonyms, and translations in multiple languages. It offers a user-friendly interface and robust functionality to facilitate quick and efficient word lookup. Whether users need to expand their vocabulary, find alternative words, or translate text, this Dictionary project serves as a reliable resource for all language-related queries.</p>
-            <a href="https://github.com/AyeshaAshfaq22/Dictionary" target="_blank" class="button"><span>Show Details</span></a>
+
+            <h3>Health Care</h3>
+            <p>HealthCare, your one-stop destination for all your health care needs. Whether you're seeking information about common medical conditions, looking for trusted health care providers, or striving to adopt a healthier lifestyle, HealthPlus has got you covered. Our user-friendly website is designed to empower individuals to make informed decisions about their health and well-being..</p>
+            <a href="https://github.com/umairsattar142/Healthcare-Website" target="_blank" class="button"><span>Show Details</span></a>
         </div>
     </section>
 
@@ -271,11 +279,11 @@ nav ul li a {
             <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
                 <div>
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Ayesha Ashfaq">
+                    <input type="text" id="name" name="name" placeholder="Umair Sattar">
                 </div><br>
                 <div>
                     <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" placeholder="abcd@gmail.com">
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com">
                 </div><br>
                 <div>
                     <label for="message">Your Message:</label>
